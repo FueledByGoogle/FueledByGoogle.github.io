@@ -1,12 +1,9 @@
-
 /*# is id
 . is class*/
-
 
 body{
 	margin:0;
 	padding:0px 0 0 0;
-	font-family: Times-new-roman;
 	background: url("HomeBackground.jpg") center;
 	background-attachment: fixed;
     background-size: cover;
@@ -15,23 +12,100 @@ body{
 	
 }
 
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  text-align:center;
+}
 
-#title
-{
+ul.menu li {display: inline-block;}
+
+ul.menu li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  /*font-size: 17px;*/
+}
+
+ul.menu li a:hover {
+	background-color: #383838;
+}
+
+ul.menu li.icon {
+	display: none;
+}
+
+
+@media screen and (max-width:680px) {
+  ul.menu li {display: none;}
+  /*position of menu icon*/
+  ul.menu li.icon {
+    float: center;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.menu.responsive {
+  	position: relative;
+  }
+  /*position of menu after being clicked on*/
+  ul.menu.responsive li.icon {
+    /*position: center;*/
+    /*right: 0;*/
+    /*top: 0;*/
+  }
+  ul.menu.responsive li {
+    float: none;
+    display: inline;
+  }
+  /*deals with position of menu items*/
+  ul.menu.responsive li a {
+    display: block;
+    text-align: center;
+  }
+}
+
+.menu {
+
+}
+
+#home {
+
+}
+
+#about {
+
+}
+
+#contact {
+ 
+}
+
+
+#title {
 	float: left;
 	width: 100%;
 	height: 850px;
-/*	background-color: transparent;
+/*
+	// code below was commented out
+	background-color: transparent;
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
 	background-size: cover;
-	background-image: url("HomeBackground.jpg");*/
-}
+	background-image: url("HomeBackground.jpg");
+}*/
 
-#introduction
+/*#introduction
 {
 	float:left;
 	width: 100%;
@@ -45,9 +119,9 @@ body{
 	background-color: #383838;
 	padding-bottom: 150px;
 
-}
+}*/
 
-.borderdown{
+.borderdown {
 	float: left;
 	width: 100%;
 	height: 100px;
@@ -62,7 +136,7 @@ body{
 	position: relative;
 }
 
-.borderup{
+.borderup {
 	float: left;
 	width: 100%;
 	height: 100px;
