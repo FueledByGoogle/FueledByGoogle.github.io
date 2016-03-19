@@ -4,15 +4,16 @@
 body{
 	margin:0;
 	padding:0px 0 0 0;
-	background: url("HomeBackground.jpg") center;
-	background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-    width: 100%
-	
+	background: url(HomeBackground.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+
 }
 
-ul.menu {
+.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -21,9 +22,14 @@ ul.menu {
   text-align:center;
 }
 
-ul.menu li {display: inline-block;}
+/*List of menu items within list*/
+.menu li {
+	display: inline-block;
+}
 
-ul.menu li a {
+
+/*All a in list of menu*/
+.menu li a {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
@@ -32,38 +38,49 @@ ul.menu li a {
   transition: 0.3s;
   /*font-size: 17px;*/
 }
+.menu li a:hover {
+	background-color: #383838;
+	/*background: #383838;*/
+}
 
-ul.menu li a:hover {
+.menu li.icon {
+	display: none;
 	background-color: #383838;
 }
 
-ul.menu li.icon {
-	display: none;
+/*when the button is being clicked*/
+.menu li a:active {
+        /*background-color: #f90;*/
+ }
+
+/*.menu .current_page_item a, .menu .current-menu-item a {
+background-color: #403630;
 }
+*/
 
-
-@media screen and (max-width:680px) {
-  ul.menu li {display: none;}
+@media screen and (max-width:800px) {
+  ul.menu li {
+  	display: none;
+  }
   /*position of menu icon*/
   ul.menu li.icon {
     float: center;
     display: inline-block;
   }
-}
-
-@media screen and (max-width:680px) {
   ul.menu.responsive {
   	position: relative;
+
   }
   /*position of menu after being clicked on*/
   ul.menu.responsive li.icon {
-    /*position: center;*/
-    /*right: 0;*/
-    /*top: 0;*/
+    /*position: center;
+    right: 0;
+    top: 0;*/
   }
   ul.menu.responsive li {
     float: none;
     display: inline;
+
   }
   /*deals with position of menu items*/
   ul.menu.responsive li a {
@@ -72,7 +89,26 @@ ul.menu li.icon {
   }
 }
 
+div.hide{
+	display:none;
+}
+div.show{
+	display:block;
+}
+
 .menu {
+
+}
+
+.textblockattributes{
+	font-family: "Courier New";
+	color: white;
+	font-size: 20px;
+	background-color: #383838;
+	margin-left: auto;
+    margin-right: auto;
+	width: 75%;
+	/*border: 1px solid white;*/
 
 }
 
@@ -90,63 +126,13 @@ ul.menu li.icon {
 
 
 #title {
-	float: left;
-	width: 100%;
-	height: 850px;
-/*
-	// code below was commented out
-	background-color: transparent;
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover; 
-	-moz-background-size: cover; 
-	-o-background-size: cover; 
-	background-size: cover;
-	background-image: url("HomeBackground.jpg");
-}*/
+	margin:auto;
+	position:relative;
+	margin-top: 50px;
+	/*width: 100%;*/ 
+	text-align: center;
+	/*padding: 10px;
+	border: 1px solid black;*/
 
-/*#introduction
-{
-	float:left;
-	width: 100%;
-	background-color: transparent;
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover; 
-	-o-background-size: cover; 
-	background-size: cover; 
-	background-color: #383838;
-	padding-bottom: 150px;
-
-}*/
-
-.borderdown {
-	float: left;
-	width: 100%;
-	height: 100px;
-	background-color: transparent;
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover; /* Safari and Chrome */
-	-moz-background-size: cover; /* Firefox */
-	-o-background-size: cover; /* Internet Explorer */
-	background-size: cover; /* CSS3 */
-	background-image: url("border_down.png");
-	position: relative;
 }
 
-.borderup {
-	float: left;
-	width: 100%;
-	height: 100px;
-	background-color: transparent;
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover; /* Safari and Chrome */
-	-moz-background-size: cover; /* Firefox */
-	-o-background-size: cover; /* Internet Explorer */
-	background-size: cover; /* CSS3 */
-	background-image: url("border_up.png");
-	position: relative;
-}
