@@ -93,7 +93,8 @@ div.hide{
 	display:none;
 }
 div.show{
-	display:block;
+	display:block; 
+
 }
 
 .menu {
@@ -116,28 +117,32 @@ div.show{
 
 }
 
-#about {
+
+.paragraphformat {
 	color: white;
 	/*background-color: #383838;*/
 	font-size: 25px;
-	width: 85%;
-    margin: auto; 
+   
+}
+
+#about {
+ 	margin: 0 auto;
+    width: 70%;
+}​
+
+#about a:visited{
+	color:white;
 }
 
 #contact{
- 	color: white;
-	/*background-color: #383838;*/
-	font-size: 25px;
-	width: 85%;
-    margin: auto; 
+	
+
 }
 
 #media{
+ 	margin: 0 auto; 
+ 	width: 50%;
  	color: white;
-	/*background-color: #383838;*/
-	font-size: 25px;
-	width: 85%;
-    margin: auto; 
 }
 
 
