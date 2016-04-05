@@ -3,18 +3,42 @@ function myFunction(){
 }  
 
 function hideall(){
-    document.getElementById("about").className = "hide";
-    document.getElementById("contact").className = "hide";
-    document.getElementById("media").className = "hide";
+   //  $( "#title" ).fadeIn( "slow", function() {
+  	// });
+    $( "#about" ).fadeOut("fast"), function() {
+  	};
+   	$( "#media" ).fadeOut("slow"), function() {
+  	};
 }
 
 function about(){
-	document.getElementById("about").className = "show";
-	document.getElementById("media").className = "hide";
+	// $( "#about" ).fadeIn("slow"), function() {
+ //  	};
+	// $( "#media" ).fadeOut("slow"), function() {
+ //  	};
+  	// $( "#title" ).fadeTo(600,0), function() {
+  	// };
+
+
+  	$('#media, #contact').fadeOut(300);
+	$('#about').delay(400).fadeIn(300);
+
+}
+
+function contact(){
+
+  	$('#media, #about').fadeOut(300);
+	$('#contact').delay(400).fadeIn(300);
+
 }
 
 function media(){
-	document.getElementById("media").className = "show";
-	document.getElementById("about").className = "hide";
+	// $( "#media" ).fadeIn("slow"), function() {
+ //  	};
+	// $( "#about" ).fadeOut("slow"), function() {
+ //  	};
+
+  	$('#about, #contact').fadeOut(300);
+	$('#media').delay(400).fadeIn(300);
 }
 
