@@ -5,10 +5,11 @@ function myFunction(){
 function hideall(){
    //  $( "#title" ).fadeIn( "slow", function() {
   	// });
-    $( "#about" ).fadeOut("fast"), function() {
-  	};
-   	$( "#media" ).fadeOut("slow"), function() {
-  	};
+    // $( "#about" ).fadeOut("fast"), function() {
+    // };
+    // $( "#media" ).fadeOut("slow"), function() {
+    // };
+    $('#media, #contact, #about').fadeOut(300);
 }
 
 function about(){
@@ -19,7 +20,7 @@ function about(){
   	// $( "#title" ).fadeTo(600,0), function() {
   	// };
 
-
+        
   	$('#media, #contact').fadeOut(300);
 	$('#about').delay(400).fadeIn(300);
 

@@ -9,17 +9,16 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-
 }
 
+/*Menu properties*/
 .menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: transparent;
-  text-align:center;
+	overflow: hidden;
+	background-color: transparent;
+	text-align:center;
 }
 
 /*List of menu items within list*/
@@ -27,16 +26,15 @@ body{
 	display: inline-block;
 }
 
-
 /*All a in list of menu*/
 .menu li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  /*font-size: 17px;*/
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	/*font-size: 17px;*/
 }
 .menu li a:hover {
 	background-color: #383838;
@@ -50,7 +48,7 @@ body{
 
 /*when the button is being clicked*/
 .menu li a:active {
-        /*background-color: #f90;*/
+		/*background-color: #f90;*/
  }
 
 /*.menu .current_page_item a, .menu .current-menu-item a {
@@ -58,34 +56,44 @@ background-color: #403630;
 }
 */
 
+/*Hyperlink Properties*/
+a { 
+	color:white;
+ }
+
+a, a:hover, a:active, a:visited {
+	color:white;
+}
+
+
 @media screen and (max-width:800px) {
   ul.menu li {
-  	display: none;
+	display: none;
   }
   /*position of menu icon*/
   ul.menu li.icon {
-    float: center;
-    display: inline-block;
+	float: center;
+	display: inline-block;
   }
   ul.menu.responsive {
-  	position: relative;
+	position: relative;
 
   }
   /*position of menu after being clicked on*/
   ul.menu.responsive li.icon {
-    /*position: center;
-    right: 0;
-    top: 0;*/
+	/*position: center;
+	right: 0;
+	top: 0;*/
   }
   ul.menu.responsive li {
-    float: none;
-    display: inline;
+	float: none;
+	display: inline;
 
   }
   /*deals with position of menu items*/
   ul.menu.responsive li a {
-    display: block;
-    text-align: center;
+	display: block;
+	text-align: center;
   }
 }
 
@@ -107,7 +115,7 @@ div.show{
 	font-size: 20px;
 	background-color: #383838;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	width: 75%;
 	/*border: 1px solid white;*/
 
@@ -117,17 +125,18 @@ div.show{
 
 }
 
-
 .paragraphformat {
 	color: white;
-	/*background-color: #383838;*/
+	/*background-color: rgba(40,40,40,0.9);*/
 	font-size: 25px;
-   
+	margin: 0 auto;
+	/*width:60%;*/
 }
 
 #about {
- 	margin: 0 auto;
-    width: 70%;
+	margin: 0 auto;
+	background-color: rgba(40,40,40,0.9);
+	width:65%;
 }​
 
 #about a:visited{
@@ -136,15 +145,13 @@ div.show{
 
 #contact{
 	
-
 }
 
 #media{
- 	margin: 0 auto; 
- 	width: 50%;
- 	color: white;
+	margin: 0 auto; 
+	width: 50%;
+	color: white;
 }
-
 
 #title {
 	margin:auto;
@@ -154,7 +161,6 @@ div.show{
 	text-align: center;
 	/*padding: 10px;
 	border: 1px solid black;*/
-
 }
 
 .ig-b- { display: inline-block; }
