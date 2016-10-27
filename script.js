@@ -19,7 +19,6 @@ function about(){
  //  	};
   	// $( "#title" ).fadeTo(600,0), function() {
   	// };
-
         
   	$('#media, #contact').fadeOut(300);
 	$('#about').delay(400).fadeIn(300);
