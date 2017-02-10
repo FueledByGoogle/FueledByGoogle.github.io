@@ -4,7 +4,7 @@
 body{
 	margin:0;
 	padding:0px 0 0 0;
-	background: url(home_background.jpg) no-repeat center center fixed; 
+	background: url('pictures/home_background.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -13,17 +13,22 @@ body{
 
 /*Menu properties*/
 .menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 	overflow: hidden;
 	background-color: transparent;
 	text-align:center;
+	
 }
 
 /*List of menu items within list*/
 .menu li {
+	/*display: inline-block; displays items horizontally rather than vertically*/
+
 	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
 }
 
 /*All a in list of menu*/
@@ -36,25 +41,32 @@ body{
 	transition: 0.3s;
 	/*font-size: 17px;*/
 }
+
 .menu li a:hover {
-	background-color: #383838;
-	/*background: #383838;*/
+	 color: #000;
+}
+
+.menu li a:hover:after {
+	width: 100%;
+	background: black;
 }
 
 .menu li.icon {
-	display: none;
+	display: none; /*when screen size goes too small the menu icon appears, but on big screens we hide it*/
 	background-color: #383838;
 }
 
-/*when the button is being clicked*/
-.menu li a:active {
-		/*background-color: #f90;*/
- }
-
-/*.menu .current_page_item a, .menu .current-menu-item a {
-background-color: #403630;
+.menu li a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
 }
-*/
+
+
 
 /*Hyperlink Properties*/
 a { 
@@ -97,10 +109,10 @@ a, a:hover, a:active, a:visited {
   }
 }
 
-div.hide{
+div.hide {
 	display:none;
 }
-div.show{
+div.show {
 	display:block; 
 
 }
@@ -109,7 +121,7 @@ div.show{
 
 }
 
-.textblockattributes{
+.textblockattributes {
 	font-family: "Courier New";
 	color: white;
 	font-size: 20px;
@@ -133,21 +145,25 @@ div.show{
 	/*width:60%;*/
 }
 
+
+/*Everything below dictates the layout of each section*/
 #about {
 	margin: 0 auto;
 	background-color: rgba(40,40,40,0.40);
 	width:92%;
 }​
 
-#about a:visited{
+#about a:visited {
 	color:white;
 }
 
-#contact{
-	
+#contact {
+	text-align: center;
+	color: white;
 }
 
-#media{
+#social {
+	text-align: center;
 	margin: 0 auto; 
 	width: 50%;
 	color: white;
@@ -163,5 +179,25 @@ div.show{
 	border: 1px solid black;*/
 }
 
+#projects {
+	text-align: center;
+	color: white;
+}
 
 
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#projects {
+	margin: 0 auto;
+	width: 60%;
+}
