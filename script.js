@@ -3,25 +3,25 @@ function myFunction() {
 }  
 
 function hideall() {
-  $('#social, #contact, #about').fadeOut(300);
+  $('#social, #contact, #about, #projects').fadeOut(300);
 }
 
 function about() {
         
-  $('#social, #contact').fadeOut(300);
+  $('#social, #contact, #projects').fadeOut(300);
   $('#about').delay(400).fadeIn(300);
 
 }
 
 function contact() {
 
-  $('#social, #about').fadeOut(300);
+  $('#social, #about, #projects').fadeOut(300);
   $('#contact').delay(400).fadeIn(300);
 
 }
 
 function social() {
-  $('#about, #contact').fadeOut(300);
+  $('#about, #contact, #projects').fadeOut(300);
   $('#social').delay(400).fadeIn(300);
 }
 
