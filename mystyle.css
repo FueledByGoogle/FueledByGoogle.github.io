@@ -139,10 +139,8 @@ div.show {
 
 .paragraphformat {
 	color: white;
-	/*background-color: rgba(40,40,40,0.9);*/
 	font-size: 25px;
-	margin: 0 auto;
-	/*width:60%;*/
+	/*margin: 0 auto;*/
 }
 
 
@@ -198,6 +196,9 @@ html, body {
 }
 
 #projects {
-	margin: 0 auto;
+	background-color: rgba(40,40,40,0.40);
+	text-align: center;
+	padding: 10px;
+	margin: auto;
 	width: 60%;
 }
