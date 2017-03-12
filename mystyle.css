@@ -2,8 +2,8 @@
 . is class*/
 
 body{
-	margin:0;
-	padding:0px 0 0 0;
+	margin: 0;
+	padding: 0 0 0 0;
 	background: url('pictures/home_background.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -107,6 +107,11 @@ a, a:hover, a:active, a:visited {
 	display: block;
 	text-align: center;
   }
+
+  #projects{
+  	margin: auto;
+  	width: 100%;
+  }
 }
 
 div.hide {
@@ -129,8 +134,6 @@ div.show {
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
-	/*border: 1px solid white;*/
-
 }
 
 #home {
@@ -142,7 +145,6 @@ div.show {
 	font-size: 25px;
 	/*margin: 0 auto;*/
 }
-
 
 /*Everything below dictates the layout of each section*/
 #about {
@@ -182,9 +184,15 @@ div.show {
 	color: white;
 }
 
+#projects {
+	background-color: rgba(40,40,40,0.40);
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+	width: 60%;
+}
 
-
-* {
+/** {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -193,12 +201,4 @@ div.show {
 html, body {
     height: 100%;
     width: 100%;
-}
-
-#projects {
-	background-color: rgba(40,40,40,0.40);
-	text-align: center;
-	padding: 10px;
-	margin: auto;
-	width: 60%;
-}
+}*/
