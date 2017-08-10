@@ -2,6 +2,7 @@
 . is class*/
 
 body{
+	font-family: Times;
 	margin: 0;
 	padding: 0 0 0 0;
 	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('pictures/home_background.jpg') no-repeat center fixed;
@@ -18,7 +19,7 @@ body{
 	padding: 0;
 	overflow: hidden;
 	background-color: transparent;
-	text-align:center;
+	text-align: center;
 	
 }
 
