@@ -44,7 +44,7 @@ body{
 }
 
 .menu li a:hover {
-	 color: #000;
+	color: #000;
 }
 
 .menu li a:hover:after {
@@ -67,12 +67,10 @@ body{
 	transition: width .5s ease, background-color .5s ease;
 }
 
-
-
 /*Hyperlink Properties*/
 a { 
 	color:white;
- }
+}
 
 a, a:hover, a:active, a:visited {
 	color:white;
@@ -80,39 +78,34 @@ a, a:hover, a:active, a:visited {
 
 
 @media screen and (max-width:800px) {
-  ul.menu li {
-	display: none;
-  }
-  /*position of menu icon*/
-  ul.menu li.icon {
-	float: center;
-	display: inline-block;
-  }
-  ul.menu.responsive {
-	position: relative;
+	ul.menu li {
+		display: none;
+	}
+	/*position of menu icon*/
+	ul.menu li.icon {
+		float: center;
+		display: inline-block;
+	}
+	ul.menu.responsive {
+		/*position: relative;*/
 
-  }
-  /*position of menu after being clicked on*/
-  ul.menu.responsive li.icon {
-	/*position: center;
-	right: 0;
-	top: 0;*/
-  }
-  ul.menu.responsive li {
-	float: none;
-	display: inline;
+	}
+	/*position of menu after being clicked on*/
+	ul.menu.responsive li.icon {
+		/*position: center;
+		right: 0;
+		top: 0;*/
+	}
+	ul.menu.responsive li {
+		float: none;
+		display: inline;
 
-  }
-  /*deals with position of menu items*/
-  ul.menu.responsive li a {
-	display: block;
-	text-align: center;
-  }
-
-  #projects{
-  	margin: auto;
-  	width: 100%;
-  }
+	}
+	/*deals with position of menu items*/
+	ul.menu.responsive li a {
+		display: block;
+		text-align: center;
+	}
 }
 
 div.hide {
@@ -137,9 +130,6 @@ div.show {
 	width: 75%;
 }
 
-#home {
-
-}
 
 .paragraphformat {
 	color: white;
@@ -147,15 +137,21 @@ div.show {
 	/*margin: 0 auto;*/
 }
 
+
 /*Everything below dictates the layout of each section*/
+
+#home {
+
+}
+
 #about {
 	margin: 0 auto;
 	background-color: rgba(40,40,40,0.40);
-	width:92%;
+	width: 92%;
 }​
 
 #about a:visited {
-	color:white;
+	color: white;
 }
 
 #contact {
@@ -192,14 +188,3 @@ div.show {
 	margin: auto;
 	width: 60%;
 }
-
-/** {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-}*/

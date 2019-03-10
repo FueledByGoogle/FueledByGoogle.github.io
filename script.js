@@ -29,4 +29,3 @@ function projects() {
    $('#about, #contact, #social').fadeOut(300);
    $('#projects').delay(400).fadeIn(300);
 }
-
