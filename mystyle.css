@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 /*# is id
 . is class*/
 
 body{
-	font-family: Times;
+	font-family: "Nunito", sans-serif;
 	margin: 0;
 	padding: 0 0 0 0;
 	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('pictures/home_background.jpg') no-repeat center fixed;
@@ -83,18 +85,8 @@ a, a:hover, a:active, a:visited {
 	}
 	/*position of menu icon*/
 	ul.menu li.icon {
-		float: center;
+		/* float: center; */
 		display: inline-block;
-	}
-	ul.menu.responsive {
-		/*position: relative;*/
-
-	}
-	/*position of menu after being clicked on*/
-	ul.menu.responsive li.icon {
-		/*position: center;
-		right: 0;
-		top: 0;*/
 	}
 	ul.menu.responsive li {
 		float: none;
@@ -116,42 +108,29 @@ div.show {
 
 }
 
-.menu {
-
-}
-
-.textblockattributes {
-	font-family: "Courier New";
-	color: white;
-	font-size: 20px;
-	background-color: #383838;
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
-}
-
 
 .paragraphformat {
 	color: white;
 	font-size: 25px;
-	/*margin: 0 auto;*/
+	/* padding: 20px; */
+	width: 92%;
+	margin: auto; /* centers everything */
 }
 
 
 /*Everything below dictates the layout of each section*/
 
-#home {
-
+#title {
+	margin:auto;
+	position:relative;
+	margin-top: 50px;
+	text-align: center;
 }
 
 #about {
-	margin: 0 auto;
 	background-color: rgba(40,40,40,0.40);
-	width: 92%;
-}​
-
-#about a:visited {
 	color: white;
+	padding: 20px;
 }
 
 #contact {
@@ -159,32 +138,9 @@ div.show {
 	color: white;
 }
 
-#social {
-	text-align: center;
-	margin: 0 auto; 
-	width: 50%;
-	color: white;
-}
-
-#title {
-	margin:auto;
-	position:relative;
-	margin-top: 50px;
-	/*width: 100%;*/ 
-	text-align: center;
-	/*padding: 10px;
-	border: 1px solid black;*/
-}
-
-#projects {
-	text-align: center;
-	color: white;
-}
-
 #projects {
 	background-color: rgba(40,40,40,0.40);
 	text-align: center;
-	padding: 10px;
-	margin: auto;
-	width: 60%;
+	color: white;
+	padding: 20px;
 }
