@@ -46,12 +46,12 @@ body{
 }
 
 .menu li a:hover {
-	color: #000;
+	/* color: #000; */
 }
 
 .menu li a:hover:after {
 	width: 100%;
-	background: black;
+	background: white;
 }
 
 .menu li.icon {
@@ -115,6 +115,7 @@ div.show {
 	/* padding: 20px; */
 	width: 92%;
 	margin: auto; /* centers everything */
+	text-align: center;
 }
 
 
@@ -136,11 +137,12 @@ div.show {
 #contact {
 	text-align: center;
 	color: white;
+	padding: 20px;
 }
 
 #projects {
 	background-color: rgba(40,40,40,0.40);
-	text-align: center;
+	text-align: left;
 	color: white;
 	padding: 20px;
 }
