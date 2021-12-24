@@ -10,6 +10,9 @@
 	<script type="text/javascript" src="jquery-1.12.1.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+
 </head>
 
 <body>
@@ -36,10 +39,10 @@
 	<div class="paragraphformat">
 		<div id="about" class="hide">
 			<h1 style="font-size: 50px; margin: 20px;">Hello!</h1>
-			<p>
-				<img src="pictures/me.JPG" style="width:280px; margin: 20px">
+			<img src="pictures/me.JPG" style="width:280px; margin: 20px">
+			<p style="text-align: left;">
 				<br>
-				I am a student at the University of Victoria pursuing a degree in Computer Science with a minor in Economics. I enjoy exploring new projects and understanding the underlying infrastructure, and love mobile development as well as items related to fintech.
+				I majored in Computer Science with a minor in Economics at the University of Victoria. I am passionate about mobile development and fintech. Most of the time I am curious about the structure of underlying infrastructure and their inner workings.
 				<br>
 				<br>
 				In my past time I like to work on side projects, listening to music, riding my bike, and taking some banging astro-photography photos.
@@ -58,47 +61,56 @@
 			<a href="https://www.flickr.com/photos/96080621@N04/">Flickr</a>
 	</div>
 		<div id="projects" class="hide">
-			<body>
-				<p>
-					<b>Pocket - Personal expense tracking app. (Private Github repo)</b>
-					<hr>
-					<b>Calendar View</b>
+			<p>
+				<!-- Pocket -->
+				<h2>Pocket - Personal expense tracking app [On Github]</h2>
+				<hr>
+				<b>Calendar View</b>
 
-					<ul>
-						<li>Users filter expense depending by date.</li>
-						<li>Easily delete entries by swiping left in the cell.</li>
-						<li>Edit an existing entry from calendar view.</li>
-					</ul>
-					
-					<b>Expense Edit View</b>
-					<ul>
-						<li>Textview automatically scrolls up if cursor is obscured by the keyboard (this was a pain in the ass to get right).</li>
-					</ul>
-					
-					<b>Expense view</b>
-					<ul>
-						<li>Enter a detailed description of an expense.</li>
-					</ul>
+				<ul>
+					<li>Users filter expense depending by date.</li>
+					<li>Easily delete entries by swiping left in the cell.</li>
+					<li>Edit an existing entry from calendar view.</li>
+				</ul>
+				
+				<b>Expense Edit View</b>
+				<ul>
+					<li>Textview automatically scrolls up if cursor is obscured by the keyboard (this was a pain in the ass to get right).</li>
+				</ul>
+				
+				<b>Expense view</b>
+				<ul>
+					<li>Enter a detailed description of an expense.</li>
+				</ul>
 
-					<b>Chart View</b>
-					<ul>
-						<li>Custom pie chart drawn from data that dynamically assigns a colour to a category, and displayed along with a chart legend.</li>
-						<li>Update pie chart view based on filter of current day, week, month, or year.</li>
-					</ul>
-					
-					<b>General</b>
-					<ul>
-						<li>Adaptive dark/light mode colour switching.</li>
-					</ul>
-					
-				</p>
+				<b>Chart View</b>
+				<ul>
+					<li>Custom pie chart drawn from data that dynamically assigns a colour to a category, and displayed along with a chart legend.</li>
+					<li>Update pie chart view based on filter of current day, week, month, or year.</li>
+				</ul>
+				
+				<b>General</b>
+				<ul>
+					<li>Adaptive dark/light mode colour switching.</li>
+				</ul>
+			</p>
 
-				<br>
-				<img src="pictures/project_pocket_images/Calendar.png" width="300">
-				<img src="pictures/project_pocket_images/CalendarEdit.png" width="300">
-				<img src="pictures/project_pocket_images/Expenses.png" width="300">
-				<img src="pictures/project_pocket_images/AddExpenses.png" width="300">
-			</body>
+			<br>
+			<img src="pictures/project_pocket_images/Calendar.png" width="300">
+			<img src="pictures/project_pocket_images/CalendarEdit.png" width="300">
+			<img src="pictures/project_pocket_images/Expenses.png" width="300">
+			<img src="pictures/project_pocket_images/AddExpenses.png" width="300">
+			
+			
+			<p>
+				<!-- S2Mosaic -->
+				<h2>S2Mosaic - Cloud detection and satellite mosaicing [On Github]</h2>
+				<hr>
+				
+				We compiles several weeks of sentinel2 satellite data into a cloud-free, histogram-corrected multi-band map. With proper pre-processing we improve on the ability for S2Cloudless to detect clouds and therefore achieve a better cloudless mosaic.
+			</p>
+
+			
 		</div>
 	</div>
 </body>
