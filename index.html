@@ -107,7 +107,9 @@
 				<h2>S2Mosaic - Cloud detection and satellite mosaicing [On Github]</h2>
 				<hr>
 				
-				We compiles several weeks of sentinel2 satellite data into a cloud-free, histogram-corrected multi-band map. With proper pre-processing we improve on the ability for S2Cloudless to detect clouds and therefore achieve a better cloudless mosaic.
+				We compiled several weeks of Sentinel2 satellite data into a cloud-free, histogram-corrected multi-band map. With our pre-processed data we were able to achieve significantly better results than if raw Sentinel2 L2A data was fed directly to S2Cloudless.
+
+				The most notable differences was the ability to detect wispy clouds, while S2Cloudless without any pre-processing can pick out thick white clouds with a dark land/water mass underneath, it is unable to detect wispy clouds if no pre-processing is applied to the raw data.
 			</p>
 
 			
