@@ -7,7 +7,7 @@ body{
 	font-family: "Nunito", sans-serif;
 	margin: 0;
 	padding: 0 0 0 0;
-	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('pictures/home_background.jpg') no-repeat center fixed;
+	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('pictures/home_background.jpg') no-repeat center bottom fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -22,7 +22,6 @@ body{
 	overflow: hidden;
 	background-color: transparent;
 	text-align: center;
-	
 }
 
 /*List of menu items within list*/
@@ -56,7 +55,7 @@ body{
 
 .menu li.icon {
 	display: none; /*when screen size goes too small the menu icon appears, but on big screens we hide it*/
-	background-color: #383838;
+	background-color: #2f2f48;
 }
 
 .menu li a:after {
@@ -113,9 +112,9 @@ div.show {
 	color: white;
 	font-size: 25px;
 	/* padding: 20px; */
-	width: 92%;
+	width: 60%;
 	margin: auto; /* centers everything */
-	text-align: center;
+	text-align: left;
 }
 
 
